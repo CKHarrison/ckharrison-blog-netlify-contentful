@@ -26,6 +26,7 @@ module.exports = {
     "no-undef": 1,
     "react/prefer-stateless-function": 0,
     "react/prop-types": 0,
+    "import/no-extraneous-dependencies": 0,
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
