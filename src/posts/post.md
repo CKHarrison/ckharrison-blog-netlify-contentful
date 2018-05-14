@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the new blog"
+title: "CKHarrison first blog"
 date: "2018-05-08"
 ---
 
