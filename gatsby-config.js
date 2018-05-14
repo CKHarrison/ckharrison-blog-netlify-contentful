@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Gatsby Default Starter",
-    desc: "My Blog",
+    desc: "A new blog",
   },
-  pathPrefix: "/ckharrison-blog",
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
@@ -27,8 +26,9 @@ module.exports = {
         excerpt_separator: `<!-- end -->`,
       },
     },
-    "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
   ],
 };
+
+// pathPrefix: "/ckharrison-blog",
