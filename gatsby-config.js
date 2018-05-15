@@ -1,9 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Default Starter",
+    title: "Chris Harrison Blog",
     desc: "A new blog",
   },
   plugins: [
+    {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId: "vbnundbotuho",
+        accessToken: "e5aa8cf054ae5a9be3ac3d3e4b4b2b1d1d0733f43a798627b333d041b696137b",
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-styled-components",
     {
@@ -27,15 +34,9 @@ module.exports = {
         path: `${__dirname}/static/assets`,
       },
     },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        excerpt_separator: `<!-- end -->`,
-      },
-    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    "gatsby-plugin-netlify-cms",
+    "gatsby-transformer-remark",
   ],
 };
 
